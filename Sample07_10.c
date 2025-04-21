@@ -2,6 +2,9 @@
 #define SUBJECTS 3
 const char *subject_names[] = { "英語", "数学", "国語","理化","社会" };
 
+static void func();
+
+
 int main(void) {
 
 	setvbuf(stdout, NULL, _IONBF, 0);
@@ -49,6 +52,13 @@ int main(void) {
 		printf("%s:%d点\t", subject_names[i], subject_avg);
 	}
 	printf("全体:%d点\n", total_sum / SUBJECTS);
+	
+	func();
 
 	return 0;
 }
+
+static void func(){
+	printf("func");
+}
+
