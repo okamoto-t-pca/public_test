@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define SUBJECTS 3
-const char *subject_names[] = { "英語", "数学", "国語" };
+const char *subject_names[] = { "英語", "数学", "国語","理化","社会" };
 
 int main(void) {
 
