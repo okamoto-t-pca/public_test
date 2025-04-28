@@ -2,14 +2,14 @@
 #define SUBJECTS 3
 const char *subject_names[] = { "英語", "数学", "国語","理化","社会" };
 
-static void func();
+static void func2();
 
 
 int main(void) {
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 
-	int students;
+	int Students;
 	printf("受験者数を入力！\n");
 	scanf("%d", &students);
 
@@ -53,12 +53,12 @@ int main(void) {
 	}
 	printf("全体:%d点\n", total_sum / SUBJECTS);
 	
-	func();
+	func2();
 
 	return 0;
 }
 
-static void func(){
+static void func2(){
 	printf("func");
 }
 
